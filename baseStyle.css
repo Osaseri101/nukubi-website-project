@@ -1,0 +1,65 @@
+* {
+    background-color:#f5f5f5;
+    --primary-font-family: "Fraunces", serif;
+    --secondary-font-family: 'sansation', sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    border: 2px solid #0000003f;
+    margin: 0px;
+    padding: 0px;
+}
+#navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+/* .navElements {
+    border: 2px dashed #0000003f;
+    background-color: #fc4747;
+} */
+
+.specialLinks {
+    font-family: var(--secondary-font-family);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#navigationBar a ,
+#navigationBar a:visited,
+#navigationBar a:hover,
+#navigationBar a:active {
+    color: black;
+    text-decoration: none;
+    cursor: crosshair;
+}
+
+#titleLogo {
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    transform: translateY(-4px); /* Put this to compensate for the extra gap in the logo image so the text can look visually aligned */
+}
+
+#logoLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#bookMeButton {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+    background-color: #f7dfff;
+}
