@@ -133,3 +133,52 @@ body {
     border: 2px solid blue;
     position: relative;
 }
+
+#boySectionParent {
+    position: relative;
+    border: 3px dashed red;
+    display: flex;
+    min-height: 45rem;
+    height: 30rem;
+}
+
+#boySectionMainText {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 4.5rem 3rem 0rem 1rem;
+    padding: 0rem 2.5rem 1.5rem;
+    line-height: 5.2rem;
+    letter-spacing: -0.1rem;
+}
+
+#boySectionSubText {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5rem 3rem 0rem 1rem;
+    font-family: var(--primary-font-family);
+    
+}
+
+#boySectionSubTextOne {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.5rem 3rem 0rem 1rem;
+    padding: 0rem 2.5rem 1.5rem;
+    
+    
+}
+
+#boyBackground {
+    position: absolute;
+    bottom: 0rem;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    /* background-color: #ff00c8; */
+    background-image: linear-gradient(to bottom, #ff9764, #fce4be);
+    border-radius: 16px 16px 0px 0px;
+    
+}
