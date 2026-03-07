@@ -263,14 +263,18 @@ body {
     gap: 1rem;
 }
 
-#collageSectionText {
-    font-family: var(--primary-font-family);
+
+
+h2 {
+     font-family: var(--primary-font-family);
     font-size: 5.0rem;
     font-weight: 450;
     font-kerning: none;
     letter-spacing: 0.1rem;
     line-height: 5rem;
-    padding: 2rem 0rem 2rem 4rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    margin: 0px;
 }
 
 #collageSectionImageContainer {
@@ -327,4 +331,80 @@ body {
     grid-area: image5;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+#servicesSectionParent {
+    width: 100%;
+    height: 80dvh;
+    
+}
+#servicesSectionSubContainer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+     "heading subtext"
+     "image list";
+    height: 100%;
+}
+
+#servicesSectionGridHeading {
+    grid-area: heading;
+}
+
+#servicesSectionHeading {
+    padding-bottom: 1rem;
+}
+
+#servicesSectionGridSubtext {
+    grid-area: subtext;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+#servicesSectionSubText{
+    display: flex;
+    
+   
+}
+
+#servicesSectionGridImage {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicesSectionImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 70%;
+    height: 60%;
+     border-radius: 2rem;
+ 
+}
+
+#servicesSectionGridList {
+    grid-area: list;
+}
+
+
+
+
+
+
+.servicessection {
+    border: 2px dashed red;
+    
+}
+
+.servicessection-2 {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed blue;
 }
